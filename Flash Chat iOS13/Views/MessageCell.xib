@@ -20,11 +20,19 @@
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JGi-xe-pqO">
                         <rect key="frame" x="10" y="10" width="639" height="40"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-1Q-69H">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <color key="tintColor" name="BrandBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Hwt-2i-OW3"/>
+                                    <constraint firstAttribute="width" constant="40" id="idj-6d-jKF"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcz-cs-8ZG">
-                                <rect key="frame" x="0.0" y="0.0" width="579" height="40"/>
+                                <rect key="frame" x="60" y="0.0" width="519" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUp-AI-jJO">
-                                        <rect key="frame" x="10" y="10" width="559" height="20"/>
+                                        <rect key="frame" x="10" y="10" width="499" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -59,6 +67,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="WUp-AI-jJO" id="Bc8-OS-ccV"/>
+                <outlet property="leftImageView" destination="t7r-1Q-69H" id="gUI-56-23X"/>
                 <outlet property="messageBubble" destination="Vcz-cs-8ZG" id="bYN-WB-hWP"/>
                 <outlet property="rightImageView" destination="Wxd-Uk-dgE" id="3rM-dV-QMx"/>
             </connections>
@@ -67,6 +76,7 @@
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
